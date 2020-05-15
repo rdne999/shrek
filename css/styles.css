@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.125rem;
+}
+
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 768px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+
+.header {
+  background: #272727;
+}
+
+.site-title {
+  color: snow;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.form,
+.card {
+  background: #f8f8f8;
+  margin: 1em;
+  padding: 2em 2em;
+  border-radius: 10px;
+  box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 416px) {
+  .form {
+    padding: 2em 0.6em;
+  }
+}
+
+.form--flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__group {
+  width: 100%;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  margin-bottom: 0.3em;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.form__login,
+.form__password {
+  width: 100%;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  padding: 0.8em 1.3em;
+  margin: 1em 0 0 0;
+  border: none;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.button:hover {
+  background: rgb(3, 139, 139);
+}
+
+.button:active {
+  background: rgb(6, 100, 100);
+}
+
+.button--green {
+  background-color: teal;
+  color: #fff;
+}
+
+.card {
+  display: none;
+}
+
+.card__user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.card__user-name {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0.5em 1em 0.5em 1em;
+}

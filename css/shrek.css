@@ -1,0 +1,30 @@
+body {
+  background-image: url("https://m.media-amazon.com/images/M/MV5BNTljZTYwMmItZjdkZi00ZDBlLWFjZTQtYjYwOTZiNDM1MmFiXkEyXkFqcGdeQXVyNTg5OTk5ODk@._V1_UY1200_CR751,0,630,1200_AL_.jpg");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  animation: blinkingText 0.2s infinite;
+}
+
+@media (max-width: 650px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
